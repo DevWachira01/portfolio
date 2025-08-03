@@ -14,6 +14,7 @@
 html{
     scroll-behavior: smooth;
 
+
 }
 body {
     font-family:'montserrat',sans-serif;
@@ -27,6 +28,9 @@ a{
 }
 a:hover{
     color: var(--link-color);
+}
+h2,h3{
+    text-align: center;
 }
 /* navbar styling */
 nav{
@@ -46,13 +50,22 @@ nav .right a{
     color: var(--text-color);
     margin:0 10px;
 }
+nav .right a:hover{
+    color: var(--link-color);
+    cursor: pointer;
+    font-size:20px;
+    font-weight: bold;
+}
+
 .hero{
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
     margin: 50px 0;
+    margin-bottom: 100px;
     gap:40px;
+    
 
 
 }
@@ -60,35 +73,99 @@ nav .right a{
     flex:5;
 
 }
-.hero .text h1{
-    font-size: 40px;
+.hero .text h2{
+    font-size: 42px;
 
 }
 .hero .text .buttons{
     margin-top: 25px;
 }
-.buttons a{
+.hero .text .buttons a{
     display: inline-block;
     padding: 5px 10px;
     border:2px solid var(--link-color);
     border-radius:5px ;
     margin:10px;
     margin-bottom: 10px;
+    transition:0.1s;
 
 }
+.hero .text .buttons a:hover{
+    background-color: var(--text-color);
+    color:var(--background-color);
+    border: none;
+    
 
+}
 .hero .headshot{
     flex: 2;
+    display: flex;
+    justify-content: right;
+
 
 }
 
-.hero img{
-    height:300px;
-    width:300px;
+.hero .headshot img{
+    border-radius: 50%;
+    width:350px;
+    
 
 }
+.education {
+    margin:50px 0;
+    padding: 0 50px;
+
+    
+    
+}
+.cards{
+    display:flex;
+    align-items: center;
+    gap:20px;
+    
+}
+.education-card{
+border:1px solid var(--text-color);
+margin:50px 0;
+padding:20px 0;
+height:300px;
+text-align: center;
+}
+.education-card p{
+    text-align: center;
+    margin:20px
+}
+.skills{
+    
+    padding: 0 50px;
+    height: 300px;
+}
+.skills .skills-card{
+    display:flex;
+    
+    
+}
+.cards img{
+    display: flex;
+}
+
+
+
 
 /* Adding responsiveness breakpoints */
-@media (max-width:700px){
+@media (max-width:800px){
     /* navbar */
+
+    /* Hero section */
+    .hero{
+        flex-direction:column-reverse ;
+        padding:0 20px;
+    }
+ .hero .text h2{
+    font-size: 25px;
+    }
+    .hero .headshot img{
+    width:250px;
+}
+ 
 }
