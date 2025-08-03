@@ -46,6 +46,47 @@ nav .right a{
     color: var(--text-color);
     margin:0 10px;
 }
+.hero{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap:40px;
+
+
+}
+.hero .text{
+    flex:5;
+
+}
+.hero .text h1{
+    font-size: 40px;
+
+}
+.hero .text .buttons{
+    margin-top: 25px;
+}
+.buttons a{
+    display: inline-block;
+    padding: 5px 10px;
+    border:2px solid var(--link-color);
+    border-radius:5px ;
+    margin:10px;
+    margin-bottom: 10px;
+
+}
+
+.hero .headshot{
+    flex: 2;
+
+}
+
+.hero img{
+    height:300px;
+    width:300px;
+
+}
 
 /* Adding responsiveness breakpoints */
 @media (max-width:700px){
