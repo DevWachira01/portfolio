@@ -37,7 +37,7 @@
                 <p>I'm a passionate Fullstack Web Developer skilled in crafting dynamic, user-friendly websites and applications. With a strong foundation in both frontend and backend technologies, I turn ideas into powerful digital solutions. Let's build something impactful together!!</p>
                 <div class="buttons">
                     <a href="" class="active">Download CV</a> 
-                    <a href="">Contact Me</a>
+                    <a href="#contact">Contact Me</a>
                 </div>
             
             </div>
@@ -68,48 +68,93 @@
             
         </section>
         <!-- Skills -->
-        <section id="skills" class="skills">
+        <section id="skills">
             <h2>Skills</h2>
-            <div class="skills-card">
-                <div class="cards">
-                    <img src="images/javascript-logo.webp" alt="javascript img"><span>Javascript</span>
+            <div class="skills-container">
+                <div class="skills">
+                    <img src="images/html-logo.webp" alt="html logo"><span>HTML</span>
                 </div>
-                <div class="cards">
-                    <img src="images/html-logo.webp" alt="html img"><span>HTML</span>
+                <div class="skills">
+                    <img src="images/css-logo.webp" alt="css logo"><span>CSS</span>
                 </div>
-                <div class="cards">
-                    <img src="images/css-logo.webp" alt="css image"><span>CSS</span>
+                <div class="skills">
+                    <img src="images/javascript-logo.webp" alt="javascript logo"><span>Javascript</span>
                 </div>
-                <div class="cards">
-                    <img src="images/node-logo.webp" alt="NodeJs image"><span>NodeJs</span>
+                <div class="skills">
+                    <img src="images/react-logo.webp" alt="react logo"><span>React</span>
                 </div>
-                <div class="cards">
-                    <img src="images/react-logo.webp" alt=""><span>React</span>
+                <div class="skills">
+                    <img src="images/node-logo.webp" alt="nodejs javascript-logo"><span>NodeJs</span>
                 </div>
-
-            </div>
-            
-
-            
+                
+            </div>  
         </section>
+
         <!-- Projects -->
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <div class="project-cards">
-                <h3>portifolio website</h3>
+        <section id="projects" class="projects">
+            <h2>Featured projects</h2>
+            <div class="container">
+            <div class="project-card">
+                <h4>Portifolio website</h4>
+                <p>A responsive personal portfolio website built using HTML and CSS to showcase my skills, projects, and experience as a fullstack web developer. Designed with clean code, intuitive navigation, and a modern layout to provide visitors with a seamless browsing experience across all devices. Simple, fast, and professional.</p>
+                <a href="#" class="project-btn">View project</a>
             </div>
-            <div class="project-cards">
-                <h3>calculator</h3>
+            <div class="project-card">
+                <h4>Scientific calculator</h4>
+                <p> A feature-rich scientific calculator developed using Python. Supports basic arithmetic operations along with advanced functions like trigonometry, logarithms, and exponentials. Built with a user-friendly command-line interface for efficient input and output. Ideal for students and professionals needing quick, accurate calculations in a lightweight, standalone Python application.</p>
+                <a href="#" class="project-btn">View project</a>
+            </div>
             </div>
 
         </section>
+
         <!-- Contact Form -->
-        <section id="contact"></section>
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <div class="contact">
+                <div class="contact-left">
+                    <h4>Lets connect on Social media</h4>
+                    <div class="socialmedia">
+                        <a href="#"><i class="fa-brands fa-github"></i>Github</a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                        <a href="#"><i class="fa-brands fa-discord"></i>Discord</a>
+                    </div>
+
+
+               </div>
+                
+                <div class="container-form">
+                
+                    <form action="#" method="POST">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" required />
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send</button>
+                    </form>
+                </div>
+
+           </div>
+
+    
+    </section>
 
     </main>
     <!-- Footer Section -->
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <P>Developed by Dennis Wachira &copy2025</P>
+        </div>
+    </footer>
 
     
 </body>
