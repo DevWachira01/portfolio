@@ -196,7 +196,7 @@ text-align: center;
 .contact {
     display:flex;
     justify-content: center;
-    gap:10px;
+    gap:5px;
     margin: 0 50px;
 
 }
@@ -205,13 +205,27 @@ text-align: center;
     display:flex;
     justify-content: center;
     gap:20px;
+    align-items: center;
 }
- 
+.socialmedia a{
+
+   background-color:var(--link-color);
+   padding:15px;
+   color:var(--background-color);
+  text-align:center;
+  border-radius:50%;
+}
+.socialmedia a i{
+    font-size: 20px;
+}
+ .socialmedia a i:hover{
+    color:var(--text-color);
+ }
 .container-form {
       
       margin: 50px auto;
       background: #fff;
-      padding: 20px;
+      padding: 30px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 8px;
     }
@@ -247,6 +261,15 @@ form{
 
     button:hover {
       background-color: #0056b3;
+    }
+
+    /*footer*/
+    .footer{
+        text-align: center;
+        background-color: var(--link-color);
+        color:var(--background-color);
+        padding: 20px;
+        
     }
 
 /* Adding responsiveness breakpoints */
